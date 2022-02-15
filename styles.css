@@ -7,6 +7,10 @@ body {
     color: white;
 }
 
+.row {
+    margin: 0;
+}
+
 /********** LINKS **********/
 
 a, a:link, a:visited {
@@ -25,6 +29,10 @@ a, a:link, a:visited {
 
 /********** ABOUT ME **********/
 
+.aboutMeSection {
+    padding-bottom: 3rem;
+}
+
 .aboutMeSection p {
     font-size: 18px;
 }
@@ -37,15 +45,85 @@ a, a:link, a:visited {
     -webkit-text-fill-color: transparent;
 }
 
-.myWork {
-    background: rgb(0,41,91);
-    background: linear-gradient(90deg, rgba(0,2,47,1) 0%, rgba(0,41,91,1) 100% );
+/********** PROJECTS **********/
+
+.experify {
+    /* background: rgb(0,41,91);
+    background: linear-gradient(90deg, rgba(0,2,47,1) 0%, rgba(0,41,91,1) 100% ); */
+    background-color: rgba(0,2,47,1);
+    padding: 3rem 0;
 }
 
-/********** Project Cards **********/
+.projects h4 {
+    /* background: -webkit-linear-gradient(left, rgba(201,165,255,1) 0%, rgba(255,132,132,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.skew {
+    transform: skewY(-3deg);
+}
+
+.skew-container{
+    transform: skewY(3deg);
+}
+
+/*** Project Cards ***/
+
+.projects {
+    background: rgb(0,41,91);
+    padding: 3rem 0;
+    margin-top: -3rem;
+}
+
+.projectContainer {
+    
+}
 
 .card {
     background: rgb(0, 28, 61);
+    box-shadow: 0 0 10px 0px #111;
+
+    width: 25rem;
+    min-height: 26rem;
+}
+
+.tech {
+    min-height: 3rem;
+}
+
+.buttons{}
+
+/********** Contact Me **********/
+
+#contactMe {
+    background: rgb(0,41,91);
+    background: linear-gradient(90deg, rgba(0,41,91,1) 0%, rgba(0,2,47,1) 100%);
+
+    margin-top: -3rem;
+}
+
+.contact {
+    padding: 6rem 0 3rem;
+}
+
+.skew-2 {
+    transform: skewY(3deg);
+}
+
+.skew-2-container {
+    transform: skewY(-3deg);
+}
+
+.contact h4 {
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.textArea {
+    margin-bottom: 1rem;
 }
 
 /********** MEDIA QUERIES **********/

@@ -17,27 +17,31 @@
 <body>
     <!---------- NAV ---------->
     <section id='aboutMe' class='aboutMeSection'>
-        <nav class="navbar navbar-dark navbar-expand-lg">
+        <nav class="navbar navbar-dark navbar-expand-lg row">
             <div class="container-fluid">
-                <a class="navbar-brand ms-3 me-4">Charles Rick</a>
+                <h1 class="navbar-brand ms-3 me-4 col-1.5">Charles Rick</h1>
                 <button class="navbar-toggler light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse align-self-end" id="navbarNav">
-                    <ul class="navbar-nav ms-3">
+                    <ul class="navbar-nav ms-3 col-10">
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutMe">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#myWork">My Work</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
+                            <a class="nav-link" aria-current="page" href="#projects">My Work</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contactMe">Contact Me</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-1 row">
+                        <li class="nav-item col-6">
+                            <a class="nav-link" href="#contactMe">Github</a> 
+                        </li>
+                        <li class="nav-item col-6">
+                            <a class="nav-link" href="#contactMe">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +66,7 @@
                     <p class='ms-4 me-4 ms-lg-3'>
                         Over this time I have obtained many important skills outlined on my resume, including but not
                         limited to
-                        Jira, React, Handlebars, NodeJS, Express, Bootstrap,
+                        Jira, React, Handlebars, NodeJS, Express.js, Bootstrap,
                         MongoDB, Mongoose, MySQL, UX Design and UI Design.
                     </p>
 
@@ -77,103 +81,63 @@
 
     </section>
 
-    <section id='myWork' class='row myWork mx-auto'>
-        <div class='experify row col-12 mt-4 mx-auto'>
-            <img class='col-4 col-sm-3 mx-auto' src='./assets/my-work/Experify1.png'>
-            <img class='col-4 col-sm-3 mx-auto' src='./assets/my-work/Experify2.png'>
-            <img class='col-4 col-sm-3 mx-auto' src='./assets/my-work/Experify3.png'>
-        </div>
-        <div class='row'>
-            <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                <img src="./assets/my-work/budgeter.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <div class='row'>
-                        <p class="card-text col-auto mx-auto mt-2"></p>
-                    </div>
-                    <a href="#" class="btn btn-primary">Code</a>
-                    <a href="#" class="btn btn-primary">Deployed</a>
-                </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/employee-tracker.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
+    <section id='projects' class='skew experify mx-auto'>
+        <div class="container skew-container">
+            <div class='experify row col-12 mx-auto'>
+                <div class="col-12 col-md-6">
+                    <h3 class="py-4">My Work</h3>
+                    <p class='mx-auto'>
+                        This app was built as my final project for my Mobile App Design and Development course. As a
+                        group of 4 we worked with real clients to build them an app based on their overall idea.
+                        I was the lead UI/UX designer on this project. My job was to create the overall design and user
+                        experience of the app. <br> <br> For the design mockup of this application, please contact me.
+                    </p>
+                    <div class="row mb-4">
+                        <a href="#" class="btn btn-primary col-2" target="_blank">Code</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/fmarket.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
-                    </div>
-                </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/furfoodz.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
-                    </div>
-                </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/nosql-database.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
-                    </div>
-                </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/password-generator.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
-                    </div>
-                </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/furfoodz.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
-                    </div>
-                </div>
-                <div class="card col-12 col-lg-6 mx-auto mt-4" style="width: 25rem;">
-                    <img src="./assets/my-work/nosql-database.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Code</a>
-                        <a href="#" class="btn btn-primary">Deployed</a>
-                    </div>
-                </div>
+
+                <img class='col-4 col-md-2' src='./assets/my-work/Experify1.png'>
+                <img class='col-4 col-md-2' src='./assets/my-work/Experify2.png'>
+                <img class='col-4 col-md-2' src='./assets/my-work/Experify3.png'>
             </div>
+    </section>
+
+    <div class="projects">
+        <div class="projectCards">
+            <div id='projectContainer' class='row mt-5'>
+            </div>
+        </div>
+    </div>
+
+    <section id="contactMe" class="skew-2">
+        <div class="container contact skew-2-container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h3>Contact Me</h3>
+                    <p>If you wish to contact me about potential job opportunities, or freelance
+                        work, don't hesitate
+                        to use the form below, or email me directly using the email at the bottom of the page.</p>
+                </div>
+                
+                <form class="contactForm col-12 col-md-5 mx-auto" action="https://formsubmit.co/cdjrick@gmail.com" method="POST">
+                    <div class="form-group ">
+                        <label for="inputName">Name</label>
+                        <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" name="email" required class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="inputTextArea">Message</label>
+                        <textarea class="form-control textArea" name="message" required id="inputTextarea" rows="5" placeholder="Enter Message"></textarea>
+                    </div>
+                    <button type="submit" target="_blank" class="btn btn-primary mt-2 mb-3">Submit</button>
+                </form>
+            </div>
+
         </div>
     </section>
 
