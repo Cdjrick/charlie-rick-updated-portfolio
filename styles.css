@@ -13,10 +13,6 @@ body {
 
 /********** LINKS **********/
 
-a, a:link, a:visited {
-    color: white;
-}
-
 /********** NAVBAR **********/
 
 .navbar-brand {
@@ -54,11 +50,7 @@ a, a:link, a:visited {
     padding: 3rem 0;
 }
 
-.projects h4 {
-    /* background: -webkit-linear-gradient(left, rgba(201,165,255,1) 0%, rgba(255,132,132,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
+/*** Skew ***/
 
 .skew {
     transform: skewY(-3deg);
@@ -76,10 +68,6 @@ a, a:link, a:visited {
     margin-top: -3rem;
 }
 
-.projectContainer {
-    
-}
-
 .card {
     background: rgb(0, 28, 61);
     box-shadow: 0 0 10px 0px #111;
@@ -91,8 +79,6 @@ a, a:link, a:visited {
 .tech {
     min-height: 3rem;
 }
-
-.buttons{}
 
 /********** Contact Me **********/
 
@@ -107,15 +93,14 @@ a, a:link, a:visited {
     padding: 6rem 0 3rem;
 }
 
+/*** Skew ***/
+
 .skew-2 {
     transform: skewY(3deg);
 }
 
 .skew-2-container {
     transform: skewY(-3deg);
-}
-
-.contact h4 {
 }
 
 .contact p {
